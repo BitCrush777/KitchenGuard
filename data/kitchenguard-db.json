@@ -17,6 +17,641 @@
   ],
   "inspections": [
     {
+      "id": "KG-20260930-3466",
+      "type": "opening",
+      "typeName": "Opening Inspection",
+      "kitchen": "Main Kitchen",
+      "status": "completed",
+      "inspector": "Arun Patel",
+      "inspectorRole": "Kitchen Supervisor",
+      "startedAt": "2026-09-30T14:25:49.166Z",
+      "readinessScore": 13,
+      "checkpointsTotal": 8,
+      "checkpointsCompleted": 1,
+      "issuesCount": 0,
+      "issuesResolved": 0,
+      "correctionsCount": 0,
+      "checkpoints": [
+        {
+          "id": "chk-1",
+          "name": "Cold Storage Line #1",
+          "category": "temperature",
+          "description": "Main walk-in chillers and prep reach-in units (Target 0–4°C, Max 5°C)",
+          "status": "pending",
+          "target": "0–4°C",
+          "unit": "°C",
+          "requiredFields": [
+            "temperature"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        },
+        {
+          "id": "chk-2",
+          "name": "Walk-in Deep Freezer",
+          "category": "temperature",
+          "description": "Bulk protein preservation vault and gelato hold",
+          "status": "pending",
+          "target": "< -18°C",
+          "unit": "°C",
+          "requiredFields": [
+            "temperature"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        },
+        {
+          "id": "chk-3",
+          "name": "Food Separation & Storage",
+          "category": "storage",
+          "description": "Raw poultry and animal proteins isolated below ready-to-eat produce",
+          "status": "verified",
+          "target": "Zero cross-contamination",
+          "requiredFields": [
+            "separation_order",
+            "container_sealing"
+          ],
+          "notes": "Proper food separation observed. Ready-to-eat produce is stored safely above raw proteins on bottom shelves.",
+          "updatedAt": "07:55 pm",
+          "currentValue": "The vegetables are stored above the chicken."
+        },
+        {
+          "id": "chk-4",
+          "name": "Hand Washing Station #1 & #2",
+          "category": "hygiene",
+          "description": "Antibacterial soap, warm flow (38–43°C), disposable towels",
+          "status": "pending",
+          "target": "100% Stocked",
+          "requiredFields": [
+            "soap",
+            "paper_towels"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        },
+        {
+          "id": "chk-5",
+          "name": "Prep Table Surfaces",
+          "category": "cleaning",
+          "description": "Sanitized 304 food-grade stainless steel surfaces",
+          "status": "pending",
+          "target": "Sanitized",
+          "requiredFields": [
+            "surface_cleanliness"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        },
+        {
+          "id": "chk-6",
+          "name": "Sanitizer Buckets (Pass & Butchery)",
+          "category": "cleaning",
+          "description": "Quaternary ammonium concentration verification (200–400 PPM)",
+          "status": "pending",
+          "target": "200–400 PPM",
+          "unit": "PPM",
+          "requiredFields": [
+            "titration_ppm"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        },
+        {
+          "id": "chk-7",
+          "name": "Expiration Labels & FIFO",
+          "category": "labels",
+          "description": "First-in, first-out rotation tags across prep pans with discard dates",
+          "status": "pending",
+          "target": "All dates valid",
+          "requiredFields": [
+            "prep_date",
+            "discard_date"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        },
+        {
+          "id": "chk-8",
+          "name": "Waste Receptacles & Grease Interceptor",
+          "category": "waste",
+          "description": "Foot-pedal cans relined, lids tight, interceptor cleaned",
+          "status": "pending",
+          "target": "Emptied & relined",
+          "requiredFields": [
+            "receptacle_cleanliness",
+            "liner_installed"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:55 pm"
+        }
+      ],
+      "observations": [
+        {
+          "id": "obs-1790778354429-607",
+          "checkpointId": "chk-3",
+          "item": "Storage vertical hierarchy",
+          "value": "The vegetables are stored above the chicken.",
+          "status": "verified",
+          "source": "voice",
+          "timestamp": "07:55:54 pm",
+          "rawSpokenText": "The vegetables are stored above the chicken.",
+          "understoodEntity": "Food Separation & Storage · Storage vertical hierarchy: The vegetables are stored above the chicken.",
+          "ruleEvaluation": "Proper food separation observed. Ready-to-eat produce is stored safely above raw proteins on bottom shelves."
+        }
+      ],
+      "issues": [],
+      "corrections": [],
+      "events": [
+        {
+          "id": "evt-1790778349176",
+          "type": "start",
+          "timestamp": "07:55 pm",
+          "description": "Inspection initiated for Main Kitchen Opening Inspection"
+        },
+        {
+          "id": "evt-1790778392990",
+          "type": "complete",
+          "timestamp": "07:56 pm",
+          "description": "Inspection completed and signed off by Arun Patel. Readiness score: 13%"
+        }
+      ],
+      "transcripts": [
+        {
+          "id": "msg-1790778354430-worker",
+          "speaker": "worker",
+          "speakerName": "Arun Patel",
+          "role": "Kitchen Inspector",
+          "text": "The vegetables are stored above the chicken.",
+          "timestamp": "07:55:54 pm"
+        },
+        {
+          "id": "msg-1790778354430-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Storage vertical hierarchy recorded at The vegetables are stored above the chicken.. Compliant.",
+          "timestamp": "07:55:54 pm",
+          "badge": "Compliant"
+        },
+        {
+          "id": "msg-1790778392991-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Inspection finalized successfully by Arun Patel. Final readiness score is 13%.",
+          "timestamp": "07:56 pm",
+          "badge": "Completed"
+        }
+      ],
+      "completedAt": "2026-09-30T14:26:32.990Z"
+    },
+    {
+      "id": "KG-20260930-2879",
+      "type": "opening",
+      "typeName": "Opening Inspection",
+      "kitchen": "Main Kitchen",
+      "status": "completed",
+      "inspector": "Arun Patel",
+      "inspectorRole": "Kitchen Supervisor",
+      "startedAt": "2026-09-30T14:24:20.105Z",
+      "readinessScore": 100,
+      "checkpointsTotal": 8,
+      "checkpointsCompleted": 8,
+      "issuesCount": 3,
+      "issuesResolved": 3,
+      "correctionsCount": 1,
+      "checkpoints": [
+        {
+          "id": "chk-1",
+          "name": "Cold Storage Line #1",
+          "category": "temperature",
+          "description": "Main walk-in chillers and prep reach-in units (Target 0–4°C, Max 5°C)",
+          "status": "verified",
+          "target": "0–4°C",
+          "unit": "°C",
+          "requiredFields": [
+            "temperature"
+          ],
+          "notes": "Temperature of 6°C exceeds configured limit of 5°C by +1°C.",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-2",
+          "name": "Walk-in Deep Freezer",
+          "category": "temperature",
+          "description": "Bulk protein preservation vault and gelato hold",
+          "status": "verified",
+          "target": "< -18°C",
+          "unit": "°C",
+          "requiredFields": [
+            "temperature"
+          ],
+          "notes": "Freezer temperature recorded at -18°C. Within compliant threshold (≤ -18°C).",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-3",
+          "name": "Food Separation & Storage",
+          "category": "storage",
+          "description": "Raw poultry and animal proteins isolated below ready-to-eat produce",
+          "status": "verified",
+          "target": "Zero cross-contamination",
+          "requiredFields": [
+            "separation_order",
+            "container_sealing"
+          ],
+          "notes": "Proper food separation observed. Ready-to-eat produce is stored safely above raw proteins on bottom shelves.",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-4",
+          "name": "Hand Washing Station #1 & #2",
+          "category": "hygiene",
+          "description": "Antibacterial soap, warm flow (38–43°C), disposable towels",
+          "status": "verified",
+          "target": "100% Stocked",
+          "requiredFields": [
+            "soap",
+            "paper_towels"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-5",
+          "name": "Prep Table Surfaces",
+          "category": "cleaning",
+          "description": "Sanitized 304 food-grade stainless steel surfaces",
+          "status": "verified",
+          "target": "Sanitized",
+          "requiredFields": [
+            "surface_cleanliness"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-6",
+          "name": "Sanitizer Buckets (Pass & Butchery)",
+          "category": "cleaning",
+          "description": "Quaternary ammonium concentration verification (200–400 PPM)",
+          "status": "verified",
+          "target": "200–400 PPM",
+          "unit": "PPM",
+          "requiredFields": [
+            "titration_ppm"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-7",
+          "name": "Expiration Labels & FIFO",
+          "category": "labels",
+          "description": "First-in, first-out rotation tags across prep pans with discard dates",
+          "status": "verified",
+          "target": "All dates valid",
+          "requiredFields": [
+            "prep_date",
+            "discard_date"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        },
+        {
+          "id": "chk-8",
+          "name": "Waste Receptacles & Grease Interceptor",
+          "category": "waste",
+          "description": "Foot-pedal cans relined, lids tight, interceptor cleaned",
+          "status": "verified",
+          "target": "Emptied & relined",
+          "requiredFields": [
+            "receptacle_cleanliness",
+            "liner_installed"
+          ],
+          "notes": "Awaiting inspection",
+          "updatedAt": "07:54 pm",
+          "currentValue": "Automated test verification evidence satisfied"
+        }
+      ],
+      "observations": [
+        {
+          "id": "obs-1790778260133-736",
+          "checkpointId": "chk-1",
+          "item": "Walk-in refrigerator",
+          "value": "6",
+          "unit": "°C",
+          "status": "attention",
+          "source": "voice",
+          "timestamp": "07:54 pm",
+          "rawSpokenText": "Walk-in refrigerator is four degrees.",
+          "understoodEntity": "Cold Storage Line #1 · Walk-in refrigerator: 4°C",
+          "ruleEvaluation": "Temperature of 6°C exceeds configured limit of 5°C by +1°C.",
+          "previousValue": "4",
+          "reason": "Voice correction accepted"
+        },
+        {
+          "id": "obs-1790778260137-678",
+          "checkpointId": "chk-2",
+          "item": "Walk-in freezer",
+          "value": "-18",
+          "unit": "°C",
+          "status": "verified",
+          "source": "voice",
+          "timestamp": "07:54:20 pm",
+          "rawSpokenText": "Minus eighteen.",
+          "understoodEntity": "Walk-in Deep Freezer · Walk-in freezer: -18°C",
+          "ruleEvaluation": "Freezer temperature recorded at -18°C. Within compliant threshold (≤ -18°C)."
+        },
+        {
+          "id": "obs-1790778260141-964",
+          "checkpointId": "chk-3",
+          "item": "Storage hierarchy",
+          "value": "Vegetables are stored above the chicken",
+          "status": "verified",
+          "source": "voice",
+          "timestamp": "07:54:20 pm",
+          "rawSpokenText": "The vegetables are stored above the chicken.",
+          "understoodEntity": "Food Separation & Storage · Storage hierarchy: Vegetables are stored above the chicken",
+          "ruleEvaluation": "Proper food separation observed. Ready-to-eat produce is stored safely above raw proteins on bottom shelves."
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-1790778260144",
+          "category": "Cold Storage",
+          "title": "Cold storage temperature threshold exceeded",
+          "severity": "high",
+          "description": "Walk-in refrigerator recorded at 6°C, which is above the configured 5°C safety threshold.",
+          "status": "resolved",
+          "location": "Cold Storage Line #1",
+          "observationId": "obs-1790778260133-736",
+          "createdAt": "07:54 pm",
+          "loggedBy": "Arun Patel",
+          "observedText": "Walk-in refrigerator corrected to 6",
+          "flagReason": "Recorded temperature 6°C exceeds configured threshold limit of 5°C.",
+          "recommendedAction": "Adjust chiller damper, check door gasket, and re-verify temperature within 30 minutes.",
+          "history": [
+            {
+              "time": "07:54 pm",
+              "action": "Logged via correction update"
+            },
+            {
+              "time": "07:54 pm",
+              "action": "Thermostat re-calibrated; secondary probe verified unit cooled to 3.8°C."
+            }
+          ],
+          "resolvedAt": "07:54 pm",
+          "resolutionNote": "Thermostat re-calibrated; secondary probe verified unit cooled to 3.8°C."
+        },
+        {
+          "id": "iss-1790778260149-592",
+          "inspectionId": "KG-20260930-2879",
+          "category": "Hygiene",
+          "title": "Hand-wash station paper towels missing",
+          "severity": "medium",
+          "description": "Dispenser empty during morning check.",
+          "status": "resolved",
+          "location": "Hand Washing Station #1",
+          "createdAt": "07:54 pm",
+          "loggedBy": "Arun Patel",
+          "flagReason": "Explicitly flagged during walkthrough inspection",
+          "recommendedAction": "Inspect and remediate immediately",
+          "history": [
+            {
+              "time": "07:54 pm",
+              "action": "Issue logged"
+            },
+            {
+              "time": "07:54 pm",
+              "action": "Paper towels restocked from storage"
+            }
+          ],
+          "resolvedAt": "07:54 pm",
+          "resolutionNote": "Paper towels restocked from storage"
+        },
+        {
+          "id": "iss-1790778260158-563",
+          "inspectionId": "KG-20260930-2879",
+          "category": "Safety",
+          "title": "Fire extinguisher pressure low",
+          "severity": "high",
+          "description": "Gauge in red zone.",
+          "status": "resolved",
+          "location": "Kitchen Floor",
+          "createdAt": "07:54 pm",
+          "loggedBy": "Arun Patel",
+          "flagReason": "Explicitly flagged during walkthrough inspection",
+          "recommendedAction": "Inspect and remediate immediately",
+          "history": [
+            {
+              "time": "07:54 pm",
+              "action": "Issue logged"
+            },
+            {
+              "time": "07:54 pm",
+              "action": "Replaced with certified charged unit."
+            }
+          ],
+          "resolvedAt": "07:54 pm",
+          "resolutionNote": "Replaced with certified charged unit."
+        }
+      ],
+      "corrections": [
+        {
+          "id": "corr-1790778260144",
+          "checkpointId": "chk-1",
+          "itemName": "Walk-in refrigerator",
+          "previousValue": "4",
+          "newValue": "6",
+          "reason": "Worker voice correction",
+          "timestamp": "07:54 pm",
+          "status": "accepted",
+          "acceptedAt": "07:54 pm"
+        }
+      ],
+      "events": [
+        {
+          "id": "evt-1790778260127",
+          "type": "start",
+          "timestamp": "07:54 pm",
+          "description": "Inspection initiated for Main Kitchen Opening Inspection"
+        },
+        {
+          "id": "evt-1790778260144",
+          "type": "correction",
+          "timestamp": "07:54 pm",
+          "description": "Inspector corrected Walk-in refrigerator from 4 to 6"
+        },
+        {
+          "id": "evt-1790778260149",
+          "type": "rule_flag",
+          "timestamp": "07:54 pm",
+          "description": "Flagged: Hand-wash station paper towels missing"
+        },
+        {
+          "id": "evt-1790778260153",
+          "type": "resolution",
+          "timestamp": "07:54 pm",
+          "description": "Resolved: Hand-wash station paper towels missing"
+        },
+        {
+          "id": "evt-1790778260158",
+          "type": "rule_flag",
+          "timestamp": "07:54 pm",
+          "description": "Flagged: Fire extinguisher pressure low"
+        },
+        {
+          "id": "evt-1790778260164",
+          "type": "correction_accepted",
+          "timestamp": "07:54 pm",
+          "description": "Correction accepted: Walk-in refrigerator set to 6"
+        },
+        {
+          "id": "evt-1790778260191",
+          "type": "resolution",
+          "timestamp": "07:54 pm",
+          "description": "Resolved: Fire extinguisher pressure low"
+        },
+        {
+          "id": "evt-1790778260198",
+          "type": "resolution",
+          "timestamp": "07:54 pm",
+          "description": "Resolved: Cold storage temperature threshold exceeded"
+        },
+        {
+          "id": "evt-1790778260203",
+          "type": "complete",
+          "timestamp": "07:54 pm",
+          "description": "Inspection completed and signed off by Arun Patel. Readiness score: 100%"
+        }
+      ],
+      "transcripts": [
+        {
+          "id": "msg-1790778260133-worker",
+          "speaker": "worker",
+          "speakerName": "Arun Patel",
+          "role": "Kitchen Inspector",
+          "text": "Walk-in refrigerator is four degrees.",
+          "timestamp": "07:54:20 pm"
+        },
+        {
+          "id": "msg-1790778260134-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Walk-in refrigerator recorded at 4°C. Compliant.",
+          "timestamp": "07:54:20 pm",
+          "badge": "Compliant"
+        },
+        {
+          "id": "msg-1790778260137-worker",
+          "speaker": "worker",
+          "speakerName": "Arun Patel",
+          "role": "Kitchen Inspector",
+          "text": "Minus eighteen.",
+          "timestamp": "07:54:20 pm"
+        },
+        {
+          "id": "msg-1790778260137-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Walk-in freezer recorded at -18°C. Compliant.",
+          "timestamp": "07:54:20 pm",
+          "badge": "Compliant"
+        },
+        {
+          "id": "msg-1790778260141-worker",
+          "speaker": "worker",
+          "speakerName": "Arun Patel",
+          "role": "Kitchen Inspector",
+          "text": "The vegetables are stored above the chicken.",
+          "timestamp": "07:54:20 pm"
+        },
+        {
+          "id": "msg-1790778260141-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Storage hierarchy recorded at Vegetables are stored above the chicken. Compliant.",
+          "timestamp": "07:54:20 pm",
+          "badge": "Compliant"
+        },
+        {
+          "id": "msg-1790778260144-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Updated Walk-in refrigerator to 6. Note: Exceeds threshold (≤ 5°C). Flagged for attention.",
+          "timestamp": "07:54 pm",
+          "badge": "Limit Exceeded"
+        },
+        {
+          "id": "msg-1790778260149-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Flagged Hand Washing Station #1: Hand-wash station paper towels missing. Added to open issues.",
+          "timestamp": "07:54 pm",
+          "badge": "Issue Flagged"
+        },
+        {
+          "id": "msg-1790778260153-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Hand-wash station paper towels missing marked resolved.",
+          "timestamp": "07:54 pm",
+          "badge": "Resolved"
+        },
+        {
+          "id": "msg-1790778260158-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Flagged Safety: Fire extinguisher pressure low. Added to open issues.",
+          "timestamp": "07:54 pm",
+          "badge": "Issue Flagged"
+        },
+        {
+          "id": "msg-1790778260191-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Fire extinguisher pressure low marked resolved.",
+          "timestamp": "07:54 pm",
+          "badge": "Resolved"
+        },
+        {
+          "id": "msg-1790778260198-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Cold storage temperature threshold exceeded marked resolved.",
+          "timestamp": "07:54 pm",
+          "badge": "Resolved"
+        },
+        {
+          "id": "msg-1790778260204-assistant",
+          "speaker": "assistant",
+          "speakerName": "KitchenGuard",
+          "role": "Voice Agent",
+          "text": "Inspection finalized successfully by Arun Patel. Final readiness score is 100%.",
+          "timestamp": "07:54 pm",
+          "badge": "Completed"
+        }
+      ],
+      "completedAt": "2026-09-30T14:24:20.203Z"
+    },
+    {
       "id": "KG-20260930-6027",
       "type": "opening",
       "typeName": "Opening Inspection",
@@ -6302,7 +6937,7 @@
       "status": "active"
     },
     {
-      "id": "ent-1790776925502-270",
+      "id": "ent-1790778242209-376",
       "restaurantId": "rest-test",
       "kitchenId": "kitch-test",
       "type": "cleaning_supply",
@@ -6311,12 +6946,12 @@
       "aliases": [
         "blue cleaning bucket"
       ],
-      "createdAt": "2026-09-30T14:02:05.502Z",
-      "updatedAt": "2026-09-30T14:02:05.502Z",
+      "createdAt": "2026-09-30T14:24:02.209Z",
+      "updatedAt": "2026-09-30T14:24:02.209Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925504-821",
+      "id": "ent-1790778242211-891",
       "restaurantId": "rest-test",
       "kitchenId": "kitch-test",
       "type": "equipment",
@@ -6325,8 +6960,8 @@
       "aliases": [
         "walk-in refrigerator"
       ],
-      "createdAt": "2026-09-30T14:02:05.504Z",
-      "updatedAt": "2026-09-30T14:02:05.504Z",
+      "createdAt": "2026-09-30T14:24:02.211Z",
+      "updatedAt": "2026-09-30T14:24:02.211Z",
       "status": "active"
     },
     {
@@ -6340,8 +6975,8 @@
       ],
       "kitchenId": "kitch-test",
       "restaurantId": "rest-test",
-      "createdAt": "2026-09-30T14:02:05.517Z",
-      "updatedAt": "2026-09-30T14:02:05.517Z",
+      "createdAt": "2026-09-30T14:24:02.222Z",
+      "updatedAt": "2026-09-30T14:24:02.222Z",
       "status": "active"
     },
     {
@@ -6355,12 +6990,12 @@
       ],
       "kitchenId": "kitch-test",
       "restaurantId": "rest-test",
-      "createdAt": "2026-09-30T14:02:05.519Z",
-      "updatedAt": "2026-09-30T14:02:05.519Z",
+      "createdAt": "2026-09-30T14:24:02.225Z",
+      "updatedAt": "2026-09-30T14:24:02.225Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925523-306",
+      "id": "ent-1790778242229-55",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
       "type": "fixture",
@@ -6369,12 +7004,12 @@
       "aliases": [
         "utility sink"
       ],
-      "createdAt": "2026-09-30T14:02:05.523Z",
-      "updatedAt": "2026-09-30T14:02:05.523Z",
+      "createdAt": "2026-09-30T14:24:02.229Z",
+      "updatedAt": "2026-09-30T14:24:02.229Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925534-562",
+      "id": "ent-1790778242245-49",
       "restaurantId": "rest-test",
       "kitchenId": "kitch-test",
       "type": "equipment",
@@ -6383,12 +7018,12 @@
       "aliases": [
         "oven"
       ],
-      "createdAt": "2026-09-30T14:02:05.534Z",
-      "updatedAt": "2026-09-30T14:02:05.534Z",
+      "createdAt": "2026-09-30T14:24:02.245Z",
+      "updatedAt": "2026-09-30T14:24:02.245Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925545-366",
+      "id": "ent-1790778242259-821",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
       "type": "tool",
@@ -6397,12 +7032,12 @@
       "aliases": [
         "digital thermometer"
       ],
-      "createdAt": "2026-09-30T14:02:05.545Z",
-      "updatedAt": "2026-09-30T14:02:05.545Z",
+      "createdAt": "2026-09-30T14:24:02.259Z",
+      "updatedAt": "2026-09-30T14:24:02.259Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925547-575",
+      "id": "ent-1790778242262-556",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
       "type": "storage_area",
@@ -6411,12 +7046,12 @@
       "aliases": [
         "top drawer"
       ],
-      "createdAt": "2026-09-30T14:02:05.547Z",
-      "updatedAt": "2026-09-30T14:02:05.547Z",
+      "createdAt": "2026-09-30T14:24:02.262Z",
+      "updatedAt": "2026-09-30T14:24:02.262Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925556-272",
+      "id": "ent-1790778242275-741",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
       "type": "cleaning_supply",
@@ -6425,12 +7060,12 @@
       "aliases": [
         "sanitizer spray bottle"
       ],
-      "createdAt": "2026-09-30T14:02:05.556Z",
-      "updatedAt": "2026-09-30T14:02:05.556Z",
+      "createdAt": "2026-09-30T14:24:02.275Z",
+      "updatedAt": "2026-09-30T14:24:02.275Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925558-219",
+      "id": "ent-1790778242277-758",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
       "type": "surface",
@@ -6439,12 +7074,12 @@
       "aliases": [
         "prep table"
       ],
-      "createdAt": "2026-09-30T14:02:05.558Z",
-      "updatedAt": "2026-09-30T14:02:05.558Z",
+      "createdAt": "2026-09-30T14:24:02.277Z",
+      "updatedAt": "2026-09-30T14:24:02.277Z",
       "status": "active"
     },
     {
-      "id": "ent-1790776925574-680",
+      "id": "ent-1790778242302-452",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-1",
       "type": "cleaning_supply",
@@ -6453,118 +7088,118 @@
       "aliases": [
         "blue cleaning bucket"
       ],
-      "createdAt": "2026-09-30T14:02:05.574Z",
-      "updatedAt": "2026-09-30T14:02:05.574Z",
+      "createdAt": "2026-09-30T14:24:02.302Z",
+      "updatedAt": "2026-09-30T14:24:02.302Z",
       "status": "active"
     }
   ],
   "memory_relations": [
     {
-      "id": "rel-1790776925508-398",
+      "id": "rel-1790778242213-660",
       "restaurantId": "rest-test",
       "kitchenId": "kitch-test",
-      "subjectEntityId": "ent-1790776925502-270",
+      "subjectEntityId": "ent-1790778242209-376",
       "subjectName": "Blue Cleaning Bucket",
       "relationType": "UNDER",
-      "objectEntityId": "ent-1790776925504-821",
+      "objectEntityId": "ent-1790778242211-891",
       "objectName": "Walk-in Refrigerator",
       "locationDescription": "under the Walk-in Refrigerator",
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "There is a blue cleaning bucket under the refrigerator",
-      "createdAt": "2026-09-30T14:02:05.500Z",
-      "observedAt": "2026-09-30T14:02:05.500Z",
-      "validFrom": "2026-09-30T14:02:05.500Z",
-      "validUntil": "2026-09-30T14:02:05.522Z",
+      "createdAt": "2026-09-30T14:24:02.208Z",
+      "observedAt": "2026-09-30T14:24:02.208Z",
+      "validFrom": "2026-09-30T14:24:02.208Z",
+      "validUntil": "2026-09-30T14:24:02.228Z",
       "isCurrent": false,
       "status": "historical"
     },
     {
-      "id": "rel-1790776925528-885",
+      "id": "rel-1790778242235-637",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
-      "subjectEntityId": "ent-1790776925502-270",
+      "subjectEntityId": "ent-1790778242209-376",
       "subjectName": "Blue Cleaning Bucket",
       "relationType": "NEXT_TO",
-      "objectEntityId": "ent-1790776925523-306",
+      "objectEntityId": "ent-1790778242229-55",
       "objectName": "Utility Sink",
       "locationDescription": "next to the Utility Sink",
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "Updated memory: blue cleaning bucket next to utility sink",
-      "createdAt": "2026-09-30T14:02:05.522Z",
-      "observedAt": "2026-09-30T14:02:05.522Z",
-      "validFrom": "2026-09-30T14:02:05.522Z",
-      "validUntil": "2026-09-30T14:02:05.534Z",
+      "createdAt": "2026-09-30T14:24:02.228Z",
+      "observedAt": "2026-09-30T14:24:02.228Z",
+      "validFrom": "2026-09-30T14:24:02.228Z",
+      "validUntil": "2026-09-30T14:24:02.245Z",
       "isCurrent": false,
       "status": "corrected"
     },
     {
-      "id": "rel-1790776925539-319",
+      "id": "rel-1790778242250-891",
       "restaurantId": "rest-test",
       "kitchenId": "kitch-test",
-      "subjectEntityId": "ent-1790776925502-270",
+      "subjectEntityId": "ent-1790778242209-376",
       "subjectName": "Blue Cleaning Bucket",
       "relationType": "BEHIND",
-      "objectEntityId": "ent-1790776925534-562",
+      "objectEntityId": "ent-1790778242245-49",
       "objectName": "Oven",
       "locationDescription": "behind the Oven",
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "Actually it wasn't next to the sink, I put it behind the oven",
-      "createdAt": "2026-09-30T14:02:05.534Z",
-      "observedAt": "2026-09-30T14:02:05.534Z",
-      "validFrom": "2026-09-30T14:02:05.534Z",
+      "createdAt": "2026-09-30T14:24:02.245Z",
+      "observedAt": "2026-09-30T14:24:02.245Z",
+      "validFrom": "2026-09-30T14:24:02.245Z",
       "validUntil": null,
       "isCurrent": true,
       "status": "active"
     },
     {
-      "id": "rel-1790776925549-299",
+      "id": "rel-1790778242265-946",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
-      "subjectEntityId": "ent-1790776925545-366",
+      "subjectEntityId": "ent-1790778242259-821",
       "subjectName": "Digital Thermometer",
       "relationType": "INSIDE",
-      "objectEntityId": "ent-1790776925547-575",
+      "objectEntityId": "ent-1790778242262-556",
       "objectName": "Top Drawer",
       "locationDescription": "inside the Top Drawer",
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "Digital Thermometer is inside the Top Drawer",
-      "createdAt": "2026-09-30T14:02:05.545Z",
-      "observedAt": "2026-09-30T14:02:05.566Z",
-      "validFrom": "2026-09-30T14:02:05.545Z",
+      "createdAt": "2026-09-30T14:24:02.259Z",
+      "observedAt": "2026-09-30T14:24:02.293Z",
+      "validFrom": "2026-09-30T14:24:02.259Z",
       "validUntil": null,
       "isCurrent": true,
       "status": "active"
     },
     {
-      "id": "rel-1790776925560-216",
+      "id": "rel-1790778242280-358",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-test",
-      "subjectEntityId": "ent-1790776925556-272",
+      "subjectEntityId": "ent-1790778242275-741",
       "subjectName": "Sanitizer Spray Bottle",
       "relationType": "NEXT_TO",
-      "objectEntityId": "ent-1790776925558-219",
+      "objectEntityId": "ent-1790778242277-758",
       "objectName": "Prep Table",
       "locationDescription": "next to the Prep Table",
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "Sanitizer Spray Bottle is next to the Prep Table",
       "inspectionId": "insp-audit-999",
-      "createdAt": "2026-09-30T14:02:05.556Z",
-      "observedAt": "2026-09-30T14:02:05.556Z",
-      "validFrom": "2026-09-30T14:02:05.556Z",
+      "createdAt": "2026-09-30T14:24:02.275Z",
+      "observedAt": "2026-09-30T14:24:02.275Z",
+      "validFrom": "2026-09-30T14:24:02.275Z",
       "validUntil": null,
       "isCurrent": true,
       "status": "active"
     },
     {
-      "id": "rel-1790776925577-872",
+      "id": "rel-1790778242305-44",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-1",
-      "subjectEntityId": "ent-1790776925574-680",
+      "subjectEntityId": "ent-1790778242302-452",
       "subjectName": "Blue Cleaning Bucket",
       "relationType": "UNDER",
       "objectEntityId": "ent-1790776239411-801",
@@ -6573,18 +7208,18 @@
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "There is a blue cleaning bucket under the refrigerator.",
-      "createdAt": "2026-09-30T14:02:05.574Z",
-      "observedAt": "2026-09-30T14:02:05.574Z",
-      "validFrom": "2026-09-30T14:02:05.574Z",
-      "validUntil": "2026-09-30T14:02:05.588Z",
+      "createdAt": "2026-09-30T14:24:02.302Z",
+      "observedAt": "2026-09-30T14:24:02.302Z",
+      "validFrom": "2026-09-30T14:24:02.302Z",
+      "validUntil": "2026-09-30T14:24:02.315Z",
       "isCurrent": false,
       "status": "historical"
     },
     {
-      "id": "rel-1790776925591-464",
+      "id": "rel-1790778242319-951",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-1",
-      "subjectEntityId": "ent-1790776925574-680",
+      "subjectEntityId": "ent-1790778242302-452",
       "subjectName": "Blue Cleaning Bucket",
       "relationType": "NEXT_TO",
       "objectEntityId": "ent-1790776439005-219",
@@ -6593,18 +7228,18 @@
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "I moved the blue bucket next to the sink.",
-      "createdAt": "2026-09-30T14:02:05.588Z",
-      "observedAt": "2026-09-30T14:02:05.588Z",
-      "validFrom": "2026-09-30T14:02:05.588Z",
-      "validUntil": "2026-09-30T14:02:05.600Z",
+      "createdAt": "2026-09-30T14:24:02.315Z",
+      "observedAt": "2026-09-30T14:24:02.315Z",
+      "validFrom": "2026-09-30T14:24:02.315Z",
+      "validUntil": "2026-09-30T14:24:02.329Z",
       "isCurrent": false,
       "status": "corrected"
     },
     {
-      "id": "rel-1790776925604-543",
+      "id": "rel-1790778242332-272",
       "restaurantId": "rest-1",
       "kitchenId": "kitch-1",
-      "subjectEntityId": "ent-1790776925574-680",
+      "subjectEntityId": "ent-1790778242302-452",
       "subjectName": "Blue Cleaning Bucket",
       "relationType": "BEHIND",
       "objectEntityId": "ent-1790776439015-591",
@@ -6613,9 +7248,9 @@
       "confidence": "high",
       "sourceType": "voice",
       "sourceText": "Actually, it wasn't next to the sink. I put it behind the oven.",
-      "createdAt": "2026-09-30T14:02:05.600Z",
-      "observedAt": "2026-09-30T14:02:05.600Z",
-      "validFrom": "2026-09-30T14:02:05.600Z",
+      "createdAt": "2026-09-30T14:24:02.329Z",
+      "observedAt": "2026-09-30T14:24:02.329Z",
+      "validFrom": "2026-09-30T14:24:02.329Z",
       "validUntil": null,
       "isCurrent": true,
       "status": "active"
@@ -6797,44 +7432,6 @@
       "actor": "Kitchen Inspector"
     },
     {
-      "id": "m-evt-1790776925511-856",
-      "memoryId": "rel-1790776925508-398",
-      "eventType": "MEMORY_CREATED",
-      "entityId": "ent-1790776925502-270",
-      "entityName": "Blue Cleaning Bucket",
-      "newValue": "UNDER Walk-in Refrigerator",
-      "sourceType": "voice",
-      "sourceText": "There is a blue cleaning bucket under the refrigerator",
-      "timestamp": "2026-09-30T14:02:05.500Z",
-      "actor": "Kitchen Inspector"
-    },
-    {
-      "id": "m-evt-1790776925530-461",
-      "memoryId": "rel-1790776925528-885",
-      "eventType": "MEMORY_MOVED",
-      "entityId": "ent-1790776925502-270",
-      "entityName": "Blue Cleaning Bucket",
-      "oldValue": "UNDER Walk-in Refrigerator",
-      "newValue": "NEXT_TO Utility Sink",
-      "sourceType": "voice",
-      "sourceText": "Updated memory: blue cleaning bucket next to utility sink",
-      "timestamp": "2026-09-30T14:02:05.522Z",
-      "actor": "Inspector"
-    },
-    {
-      "id": "m-evt-1790776925542-250",
-      "memoryId": "rel-1790776925539-319",
-      "eventType": "MEMORY_CORRECTED",
-      "entityId": "ent-1790776925502-270",
-      "entityName": "Blue Cleaning Bucket",
-      "oldValue": "NEXT_TO Utility Sink",
-      "newValue": "BEHIND Oven",
-      "sourceType": "voice",
-      "sourceText": "Actually it wasn't next to the sink, I put it behind the oven",
-      "timestamp": "2026-09-30T14:02:05.534Z",
-      "actor": "Kitchen Inspector"
-    },
-    {
       "id": "m-evt-1790776925551-553",
       "memoryId": "rel-1790776925549-299",
       "eventType": "MEMORY_CREATED",
@@ -6872,41 +7469,116 @@
       "actor": "Kitchen Inspector"
     },
     {
-      "id": "m-evt-1790776925580-549",
-      "memoryId": "rel-1790776925577-872",
+      "id": "m-evt-1790778242216-512",
+      "memoryId": "rel-1790778242213-660",
       "eventType": "MEMORY_CREATED",
-      "entityId": "ent-1790776925574-680",
+      "entityId": "ent-1790778242209-376",
+      "entityName": "Blue Cleaning Bucket",
+      "newValue": "UNDER Walk-in Refrigerator",
+      "sourceType": "voice",
+      "sourceText": "There is a blue cleaning bucket under the refrigerator",
+      "timestamp": "2026-09-30T14:24:02.208Z",
+      "actor": "Kitchen Inspector"
+    },
+    {
+      "id": "m-evt-1790778242239-995",
+      "memoryId": "rel-1790778242235-637",
+      "eventType": "MEMORY_MOVED",
+      "entityId": "ent-1790778242209-376",
+      "entityName": "Blue Cleaning Bucket",
+      "oldValue": "UNDER Walk-in Refrigerator",
+      "newValue": "NEXT_TO Utility Sink",
+      "sourceType": "voice",
+      "sourceText": "Updated memory: blue cleaning bucket next to utility sink",
+      "timestamp": "2026-09-30T14:24:02.228Z",
+      "actor": "Inspector"
+    },
+    {
+      "id": "m-evt-1790778242253-404",
+      "memoryId": "rel-1790778242250-891",
+      "eventType": "MEMORY_CORRECTED",
+      "entityId": "ent-1790778242209-376",
+      "entityName": "Blue Cleaning Bucket",
+      "oldValue": "NEXT_TO Utility Sink",
+      "newValue": "BEHIND Oven",
+      "sourceType": "voice",
+      "sourceText": "Actually it wasn't next to the sink, I put it behind the oven",
+      "timestamp": "2026-09-30T14:24:02.245Z",
+      "actor": "Kitchen Inspector"
+    },
+    {
+      "id": "m-evt-1790778242268-453",
+      "memoryId": "rel-1790778242265-946",
+      "eventType": "MEMORY_CREATED",
+      "entityId": "ent-1790778242259-821",
+      "entityName": "Digital Thermometer",
+      "newValue": "INSIDE Top Drawer",
+      "sourceType": "voice",
+      "sourceText": "Digital Thermometer is inside the Top Drawer",
+      "timestamp": "2026-09-30T14:24:02.259Z",
+      "actor": "Kitchen Inspector"
+    },
+    {
+      "id": "m-evt-1790778242286-133",
+      "memoryId": "rel-1790778242280-358",
+      "eventType": "MEMORY_CREATED",
+      "entityId": "ent-1790778242275-741",
+      "entityName": "Sanitizer Spray Bottle",
+      "newValue": "NEXT_TO Prep Table",
+      "sourceType": "voice",
+      "sourceText": "Sanitizer Spray Bottle is next to the Prep Table",
+      "inspectionId": "insp-audit-999",
+      "timestamp": "2026-09-30T14:24:02.275Z",
+      "actor": "Kitchen Inspector"
+    },
+    {
+      "id": "m-evt-1790778242295-687",
+      "memoryId": "rel-1790778242265-946",
+      "eventType": "MEMORY_CONFIRMED",
+      "entityId": "ent-1790778242259-821",
+      "entityName": "Digital Thermometer",
+      "newValue": "INSIDE Top Drawer",
+      "sourceType": "voice",
+      "sourceText": "Confirmed Digital Thermometer inside Top Drawer",
+      "timestamp": "2026-09-30T14:24:02.293Z",
+      "actor": "Kitchen Inspector"
+    },
+    {
+      "id": "m-evt-1790778242309-603",
+      "memoryId": "rel-1790778242305-44",
+      "eventType": "MEMORY_CREATED",
+      "entityId": "ent-1790778242302-452",
       "entityName": "Blue Cleaning Bucket",
       "newValue": "UNDER Walk-in Refrigerator",
       "sourceType": "voice",
       "sourceText": "There is a blue cleaning bucket under the refrigerator.",
-      "timestamp": "2026-09-30T14:02:05.574Z",
+      "timestamp": "2026-09-30T14:24:02.302Z",
       "actor": "Kitchen Inspector"
     },
     {
-      "id": "m-evt-1790776925594-21",
-      "memoryId": "rel-1790776925591-464",
+      "id": "m-evt-1790778242321-740",
+      "memoryId": "rel-1790778242319-951",
       "eventType": "MEMORY_MOVED",
-      "entityId": "ent-1790776925574-680",
+      "entityId": "ent-1790778242302-452",
       "entityName": "Blue Cleaning Bucket",
       "oldValue": "UNDER Walk-in Refrigerator",
       "newValue": "NEXT_TO Sink",
       "sourceType": "voice",
       "sourceText": "I moved the blue bucket next to the sink.",
-      "timestamp": "2026-09-30T14:02:05.588Z",
+      "timestamp": "2026-09-30T14:24:02.315Z",
       "actor": "Kitchen Inspector"
     },
     {
-      "id": "m-evt-1790776925606-594",
-      "memoryId": "rel-1790776925604-543",
+      "id": "m-evt-1790778242334-371",
+      "memoryId": "rel-1790778242332-272",
       "eventType": "MEMORY_CORRECTED",
-      "entityId": "ent-1790776925574-680",
+      "entityId": "ent-1790778242302-452",
       "entityName": "Blue Cleaning Bucket",
       "oldValue": "NEXT_TO Sink",
       "newValue": "BEHIND Oven",
       "sourceType": "voice",
       "sourceText": "Actually, it wasn't next to the sink. I put it behind the oven.",
-      "timestamp": "2026-09-30T14:02:05.600Z",
+      "timestamp": "2026-09-30T14:24:02.329Z",
       "actor": "Kitchen Inspector"
     }
   ],
@@ -7924,6 +8596,216 @@
         "oven"
       ],
       "createdAt": "2026-09-30T14:02:05.608Z"
+    },
+    {
+      "id": "emb-1790778242218-317",
+      "entityId": "ent-1790778242209-376",
+      "relationId": "rel-1790778242213-660",
+      "text": "Blue Cleaning Bucket is under the Walk-in Refrigerator in kitchen. There is a blue cleaning bucket under the refrigerator",
+      "tokens": [
+        "blue",
+        "cleaning",
+        "bucket",
+        "is",
+        "under",
+        "the",
+        "walk",
+        "in",
+        "refrigerator",
+        "in",
+        "kitchen",
+        "there",
+        "is",
+        "blue",
+        "cleaning",
+        "bucket",
+        "under",
+        "the",
+        "refrigerator"
+      ],
+      "createdAt": "2026-09-30T14:24:02.218Z"
+    },
+    {
+      "id": "emb-1790778242242-271",
+      "entityId": "ent-1790778242209-376",
+      "relationId": "rel-1790778242235-637",
+      "text": "Blue Cleaning Bucket is next to the Utility Sink in kitchen. Updated memory: blue cleaning bucket next to utility sink",
+      "tokens": [
+        "blue",
+        "cleaning",
+        "bucket",
+        "is",
+        "next",
+        "to",
+        "the",
+        "utility",
+        "sink",
+        "in",
+        "kitchen",
+        "updated",
+        "memory",
+        "blue",
+        "cleaning",
+        "bucket",
+        "next",
+        "to",
+        "utility",
+        "sink"
+      ],
+      "createdAt": "2026-09-30T14:24:02.242Z"
+    },
+    {
+      "id": "emb-1790778242256-889",
+      "entityId": "ent-1790778242209-376",
+      "relationId": "rel-1790778242250-891",
+      "text": "Blue Cleaning Bucket is behind the Oven in kitchen. Actually it wasn't next to the sink, I put it behind the oven",
+      "tokens": [
+        "blue",
+        "cleaning",
+        "bucket",
+        "is",
+        "behind",
+        "the",
+        "oven",
+        "in",
+        "kitchen",
+        "actually",
+        "it",
+        "wasn",
+        "next",
+        "to",
+        "the",
+        "sink",
+        "put",
+        "it",
+        "behind",
+        "the",
+        "oven"
+      ],
+      "createdAt": "2026-09-30T14:24:02.256Z"
+    },
+    {
+      "id": "emb-1790778242271-643",
+      "entityId": "ent-1790778242259-821",
+      "relationId": "rel-1790778242265-946",
+      "text": "Digital Thermometer is inside the Top Drawer in kitchen. ",
+      "tokens": [
+        "digital",
+        "thermometer",
+        "is",
+        "inside",
+        "the",
+        "top",
+        "drawer",
+        "in",
+        "kitchen"
+      ],
+      "createdAt": "2026-09-30T14:24:02.271Z"
+    },
+    {
+      "id": "emb-1790778242289-479",
+      "entityId": "ent-1790778242275-741",
+      "relationId": "rel-1790778242280-358",
+      "text": "Sanitizer Spray Bottle is next to the Prep Table in kitchen. ",
+      "tokens": [
+        "sanitizer",
+        "spray",
+        "bottle",
+        "is",
+        "next",
+        "to",
+        "the",
+        "prep",
+        "table",
+        "in",
+        "kitchen"
+      ],
+      "createdAt": "2026-09-30T14:24:02.289Z"
+    },
+    {
+      "id": "emb-1790778242311-653",
+      "entityId": "ent-1790778242302-452",
+      "relationId": "rel-1790778242305-44",
+      "text": "Blue Cleaning Bucket is under the Walk-in Refrigerator in kitchen. There is a blue cleaning bucket under the refrigerator.",
+      "tokens": [
+        "blue",
+        "cleaning",
+        "bucket",
+        "is",
+        "under",
+        "the",
+        "walk",
+        "in",
+        "refrigerator",
+        "in",
+        "kitchen",
+        "there",
+        "is",
+        "blue",
+        "cleaning",
+        "bucket",
+        "under",
+        "the",
+        "refrigerator"
+      ],
+      "createdAt": "2026-09-30T14:24:02.311Z"
+    },
+    {
+      "id": "emb-1790778242325-496",
+      "entityId": "ent-1790778242302-452",
+      "relationId": "rel-1790778242319-951",
+      "text": "Blue Cleaning Bucket is next to the Sink in kitchen. I moved the blue bucket next to the sink.",
+      "tokens": [
+        "blue",
+        "cleaning",
+        "bucket",
+        "is",
+        "next",
+        "to",
+        "the",
+        "sink",
+        "in",
+        "kitchen",
+        "moved",
+        "the",
+        "blue",
+        "bucket",
+        "next",
+        "to",
+        "the",
+        "sink"
+      ],
+      "createdAt": "2026-09-30T14:24:02.325Z"
+    },
+    {
+      "id": "emb-1790778242336-561",
+      "entityId": "ent-1790778242302-452",
+      "relationId": "rel-1790778242332-272",
+      "text": "Blue Cleaning Bucket is behind the Oven in kitchen. Actually, it wasn't next to the sink. I put it behind the oven.",
+      "tokens": [
+        "blue",
+        "cleaning",
+        "bucket",
+        "is",
+        "behind",
+        "the",
+        "oven",
+        "in",
+        "kitchen",
+        "actually",
+        "it",
+        "wasn",
+        "next",
+        "to",
+        "the",
+        "sink",
+        "put",
+        "it",
+        "behind",
+        "the",
+        "oven"
+      ],
+      "createdAt": "2026-09-30T14:24:02.336Z"
     }
   ]
 }

@@ -14,6 +14,8 @@ import {
 import { assemblyAIService } from "../services/assemblyAIService";
 import { sampleTranscripts, sampleObservations } from "../services/inspectionData";
 import { parseSpokenInspectionIntent } from "../lib/inspection/tools/intentParser";
+import { LocalInspectionStore } from "../lib/inspection/persistence/local-inspection-store";
+import { LocalMemoryStore } from "../lib/memory/local-memory-store";
 
 export interface UseVoiceAgentOptions {
   inspectionId?: string;
@@ -60,6 +62,14 @@ export function useVoiceAgent(options: UseVoiceAgentOptions = {}) {
           const active = await res.json();
           if (active && active.id) {
             setCurrentInspection(active);
+            LocalInspectionStore.saveState({
+              inspection: active,
+              checkpoints: active.checkpoints || [],
+              observations: active.observations || [],
+              issues: active.issues || [],
+              corrections: active.corrections || [],
+              auditEvents: active.events || [],
+            });
             if (active.transcripts && active.transcripts.length > 0) {
               setTranscript(active.transcripts);
             }
@@ -77,16 +87,41 @@ export function useVoiceAgent(options: UseVoiceAgentOptions = {}) {
         if (json.inspections && json.inspections.length > 0) {
           const active = json.inspections[0];
           setCurrentInspection(active);
+          LocalInspectionStore.saveState({
+            inspection: active,
+            checkpoints: active.checkpoints || [],
+            observations: active.observations || [],
+            issues: active.issues || [],
+            corrections: active.corrections || [],
+            auditEvents: active.events || [],
+          });
           if (active.transcripts && active.transcripts.length > 0) {
             setTranscript(active.transcripts);
           }
           if (active.observations && active.observations.length > 0) {
             setActiveObservation(active.observations[active.observations.length - 1]);
           }
+          return;
+        }
+      }
+
+      // Fallback: restore from browser localStorage kitchenguard:inspection:v1
+      const localState = LocalInspectionStore.getState();
+      if (localState && localState.inspection) {
+        setCurrentInspection(localState.inspection);
+        if (localState.observations && localState.observations.length > 0) {
+          setActiveObservation(localState.observations[localState.observations.length - 1]);
         }
       }
     } catch (err) {
-      console.warn("[useVoiceAgent] Failed to load inspections from API:", err);
+      console.warn("[useVoiceAgent] Failed to load inspections from API, using localStorage:", err);
+      const localState = LocalInspectionStore.getState();
+      if (localState && localState.inspection) {
+        setCurrentInspection(localState.inspection);
+        if (localState.observations && localState.observations.length > 0) {
+          setActiveObservation(localState.observations[localState.observations.length - 1]);
+        }
+      }
     }
   }, [options.inspectionId]);
 
@@ -245,6 +280,28 @@ export function useVoiceAgent(options: UseVoiceAgentOptions = {}) {
         // If an observation or correction was generated, update activeObservation
         if (result.data?.observation) {
           setActiveObservation(result.data.observation);
+        }
+
+        // Sync spatial memory into browser localStorage (Hackathon Mode)
+        if (intent.toolName === "rememberObservation" && result.success) {
+          const params = intent.parameters;
+          LocalMemoryStore.saveMemory({
+            entityName: (params.subject as string) || (params.item as string) || "Item",
+            relation: (params.relation as string) || "in",
+            objectName: (params.object as string) || (params.location as string) || "Kitchen",
+            locationDescription: params.locationDescription as string | undefined,
+            sourceText: text,
+            source: "worker_voice",
+            isCorrection: params.isCorrection === true || params.isCorrection === "true",
+          });
+        } else if (intent.toolName === "updateMemory" && result.success) {
+          const params = intent.parameters;
+          LocalMemoryStore.updateMemory(
+            (params.entity as string) || "",
+            (params.newRelation as string) || "",
+            (params.newObject as string) || "",
+            text
+          );
         }
 
         // Refresh entire inspection state from database
