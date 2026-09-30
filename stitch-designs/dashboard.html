@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KitchenGuard - Food Safety Hospitality OS</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#727970","on-error-container":"#93000a","on-primary-fixed-variant":"#2d4e31","on-tertiary-fixed-variant":"#673d00","on-tertiary":"#ffffff","surface-bright":"#fbf9f6","on-tertiary-fixed":"#2b1700","secondary-fixed-dim":"#cac6bf","on-secondary-fixed-variant":"#494741","background":"#fbf9f6","on-secondary":"#ffffff","on-tertiary-container":"#f5a648","primary-fixed-dim":"#aad0aa","tertiary-container":"#693e00","primary":"#17381d","on-error":"#ffffff","on-secondary-fixed":"#1d1b17","surface-tint":"#446647","on-primary-container":"#9bc09b","error-container":"#ffdad6","primary-container":"#2e4f32","surface-container-high":"#eae8e5","on-surface":"#1b1c1a","surface-container-highest":"#e4e2df","on-background":"#1b1c1a","inverse-surface":"#30312f","surface-variant":"#e4e2df","tertiary":"#4a2a00","on-secondary-container":"#67645e","tertiary-fixed-dim":"#ffb869","error":"#ba1a1a","inverse-on-surface":"#f2f0ed","secondary-container":"#e7e2da","secondary-fixed":"#e7e2da","tertiary-fixed":"#ffdcbb","surface-container-lowest":"#ffffff","primary-fixed":"#c6edc5","secondary":"#615e58","on-primary-fixed":"#012109","surface":"#fbf9f6","surface-dim":"#dbdad7","on-surface-variant":"#424841","surface-container-low":"#f5f3f0","on-primary":"#ffffff","inverse-primary":"#aad0aa","outline-variant":"#c2c8bf","surface-container":"#efeeeb"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-md":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2.5rem","space-xl":"2.5rem"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"display-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,29,27,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="KitchenGuard Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XsfnfUrbIuZLExlHbzs4arrBSC8VI5jGxxwxb6MJ-vUvJNyacN_VYLHz0Ah_XbR_xbm_-ytBt_oeNnjQq77RM5fpNk4Q7JBHNxab2s_EG2UbTvgZLIyOStrEFIA7Vq9yHuh79vkoTViV8d4-0KX4zByb09134tLTLtLTmhTHLa6HotrxeCIOLWiwO2UP20vcKSs8RFxKvJVMhe0JE9TmNbPdkanQtKJP9dZU8mN9bD8u6ACvuQYqJdEwB2"/><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold">KitchenGuard</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary px-space-xs py-0.5 rounded bg-surface-container-high">Hospitality OS</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a aria-current="page" class="transition-colors py-2 text-primary font-semibold border-b-2 border-primary" data-path="overview" href="#">Overview</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="inspections" href="#">Inspections</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="issues" href="#">Issues</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="reports" href="#">Reports</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="rules" href="#">Rules</a></nav><div class="flex items-center gap-space-md"><button class="hidden sm:flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-full transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-[18px] text-secondary">restaurant</span><span class="font-label-md text-label-md">Main Kitchen</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></button><div class="hidden md:flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-primary-fixed text-on-primary-fixed"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm tracking-tight">Ready for Opening</span></div><button aria-label="Notifications" class="relative p-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-container"></span></button><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">Arun</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Kitchen Manager</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="max-w-7xl mx-auto px-gutter py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Kitchen Context Bar -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="font-headline-sm text-headline-sm tracking-tight text-secondary">Good morning, Arun.</span>
+<span class="text-outline">·</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Line Readiness Active</span>
+</div>
+<h1 class="font-display-lg text-display-lg tracking-tight text-on-surface mb-space-xs">
+        Kitchen status at a glance.
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+        Stay ahead of today's inspections, line temperatures, and critical kitchen sanitation standards before the evening service rush.
+      </p>
+</div>
+<!-- Actions & Global Context Pill -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs px-space-md py-3 rounded-xl bg-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-secondary" style="font-size: 20px;">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-none">Shift Cycle</span>
+<span class="font-label-lg text-label-lg text-on-surface leading-tight">Today · Main Kitchen</span>
+</div>
+</div>
+<button class="group flex items-center justify-center gap-space-xs px-space-lg h-[52px] rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container active:scale-[0.98] transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-90">add</span>
+<span>Start Inspection</span>
+</button>
+</div>
+</section>
+<!-- Hero Status Section: Architectural Unified Readiness Dashboard -->
+<section class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-lg lg:p-space-xl mb-space-xl relative overflow-hidden">
+<!-- Subtle warm atmospheric gradient backdrop -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-32 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Precision Readiness Gauge -->
+<div class="lg:col-span-5 flex flex-col sm:flex-row items-center gap-space-lg">
+<div class="relative flex items-center justify-center flex-shrink-0">
+<!-- Inline High-Precision Metric Ring -->
+<svg aria-hidden="true" class="w-44 h-44 -rotate-90 transform" viewbox="0 0 160 160">
+<circle class="text-surface-container" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary-container transition-all duration-1000 ease-out" cx="80" cy="80" fill="transparent" r="68" stroke="currentColor" stroke-dasharray="427.26" stroke-dashoffset="55.54" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-semibold leading-none">87<span class="font-headline-md text-headline-md font-normal text-secondary">%</span></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Readiness</span>
+</div>
+</div>
+<div class="flex flex-col text-center sm:text-left">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed w-fit mx-auto sm:mx-0 mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm font-semibold">Ready for Opening</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Main Kitchen</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            2 critical checks pending supervisor sign-off before 17:00 dinner seating.
+          </p>
+<div class="flex items-center gap-2 mt-space-sm text-secondary font-label-sm text-label-sm justify-center sm:justify-start">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>HACCP Tier 1 Compliance Met</span>
+</div>
+</div>
+</div>
+<!-- Right: Tonal Airflow Stats Cards -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between text-secondary mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider">Scheduled</span>
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">12</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Kitchen logs slated</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between text-primary mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Completed</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight">10</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">83% protocol pass rate</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between text-on-tertiary-container mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-tertiary">Attention</span>
+<span class="material-symbols-outlined text-[20px] text-tertiary">warning</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-tertiary tracking-tight">2</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Immediate flags require sign-off</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Kitchen Photo Accent & Real-Time Observation -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Active Protocol</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Walk-in Line &amp; Temp Log</h3>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">mic</span>
+<span>Voice Log Enabled</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md py-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary block">Walk-In Refrigerator #1</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1 block">2.4°C</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Target: 0–4°C
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary block">Walk-In Refrigerator #2</span>
+<span class="font-headline-md text-headline-md text-tertiary font-semibold mt-1 block">4.9°C</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +0.9°C Over Target
+          </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-label-sm text-label-sm text-secondary block">Deep Freeze Station #1</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold mt-1 block">-19.2°C</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Target: &lt; -18°C
+          </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-secondary font-body-sm text-body-sm">
+<span>Continuous telemetry streamed via IoT probes &amp; calibrated handheld needles</span>
+<button class="text-primary font-label-md text-label-md hover:underline flex items-center gap-1" type="button">
+          Review Cold Chain Log <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Editorial Chef Line Visual Snapshot -->
+<div class="lg:col-span-4 rounded-xl overflow-hidden shadow-sm relative min-h-[220px] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A clean, warm, Michelin-star restaurant kitchen line during prep hours. Stainless steel counters gleaming under soft architectural overhead light, with fresh leafy herbs and copper pans in pristine arrangement, captured with Scandinavian design elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXRdjv4f0I_Z7_ygBblY2vUv5VboKO4sE-_D9XoejelJXChd-YRY4sh2amItLUeoS7GbqQC0eGcR0tfvD_5cLLT3JB0WqxthH_ahy-pstaACKOQRFq_WJ0ZiSLzmm_yXhtS2L6jD9JW0sH8KP5rN4LNRBYuD85WXpPU67OVcSYZI1jVlKv7_P6W5snSXmq9bFrYu20D8PR3aGqams5rS-w2jxvQ9f3UC1ueUIAtojaGJcn8QLLQ2AOKA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/30 to-transparent flex flex-col justify-end p-space-md text-inverse-on-surface">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Pass Station 1</span>
+<span class="font-headline-sm text-headline-sm font-medium leading-snug">Executive Sous Chef Julian active on fish station prep</span>
+</div>
+</div>
+</section>
+<!-- Today's Inspection Timeline (Spacious, Horizontal Flow) -->
+<section class="w-full mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Today's Inspection Timeline</h2>
+<p class="font-body-sm text-body-sm text-secondary">Chronological sequence of mandated HACCP checks and line sweeps.</p>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Last updated: 14 mins ago</span>
+</div>
+</div>
+<!-- Spacious Stage Architecture -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg relative">
+<!-- Stage 1: Opening Inspection -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">08:30</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> Completed
+              </span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Opening Inspection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Sanitizer baselines, prep reach-in temp check, pest perimeter check.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md text-secondary font-label-sm text-label-sm">
+<span>Inspector: Marcus K.</span>
+<span class="text-primary font-medium">100% Pass</span>
+</div>
+</div>
+<!-- Stage 2: Cold Storage -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">11:20</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span> Completed
+              </span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Cold Storage</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Main walk-in chillers, meat preservation unit, ambient door alarms.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md text-secondary font-label-sm text-label-sm">
+<span>Inspector: Arun (You)</span>
+<span class="text-primary font-medium">1 Rectified</span>
+</div>
+</div>
+<!-- Stage 3: Kitchen Walkthrough -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-secondary-container/40 hover:bg-secondary-container/60 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">13:10</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">priority_high</span> 2 Issues
+              </span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Kitchen Walkthrough</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Hand-wash stocks, cross-contamination barriers, dry storage labeling.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md text-secondary font-label-sm text-label-sm">
+<span>Inspector: Arun (You)</span>
+<span class="text-tertiary font-medium">Requires Sign-off</span>
+</div>
+</div>
+<!-- Stage 4: Closing Inspection -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low/50 hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary">16:30</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm">
+                Upcoming
+              </span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Closing Inspection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              End-of-shift line scrub down, oil disposal log, final reach-in latches.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md text-secondary font-label-sm text-label-sm">
+<span>Assigned: Marcus K.</span>
+<span class="text-outline">In 2h 45m</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- "Needs Attention" Issues Section -->
+<section class="w-full mb-space-xl">
+<div class="flex items-baseline justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Needs attention</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">2 open</span>
+</div>
+<button class="text-secondary hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+        View All Logged Issues
+      </button>
+</div>
+<!-- Generous Horizontal Issue Rows -->
+<div class="space-y-space-md">
+<!-- Issue 1: High Priority -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md transition-all hover:shadow-md">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-lg text-label-lg text-on-surface">Food Separation Violation</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-medium">High Priority</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">Open</span>
+<span class="text-secondary text-label-sm font-label-sm">· 13:14 via Voice Log</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              Raw poultry stored above prep greens in Walk-in Refrigerator #2. Immediate cross-contamination risk identified during line walkthrough.
+            </p>
+<div class="flex items-center gap-space-md mt-space-xs text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Main Walk-in Rack B
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span> Logged by Arun
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm lg:flex-shrink-0 self-end lg:self-center">
+<button class="px-space-md py-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors cursor-pointer" type="button">
+            View Details
+          </button>
+<button class="px-space-md py-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-sm transition-colors cursor-pointer" type="button">
+            Assign Correction
+          </button>
+</div>
+</div>
+<!-- Issue 2: Medium Priority -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md transition-all hover:shadow-md">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">soap</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-lg text-label-lg text-on-surface">Hand-wash Station Paper Towels</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">Medium Priority</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">Open</span>
+<span class="text-secondary text-label-sm font-label-sm">· 13:10 check</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              Station #3 dispenser empty during 13:10 check. Backup stock present in dry chemical locker.
+            </p>
+<div class="flex items-center gap-space-md mt-space-xs text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Pastry &amp; Saucier Pass
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span> Logged by Arun
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm lg:flex-shrink-0 self-end lg:self-center">
+<button class="px-space-md py-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors cursor-pointer" type="button">
+            View Details
+          </button>
+<button class="px-space-md py-3 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-sm transition-colors cursor-pointer" type="button">
+            Restock &amp; Verify
+          </button>
+</div>
+</div>
+<!-- Issue 3: Resolved Item -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md opacity-90 transition-all hover:opacity-100">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-lg text-label-lg text-on-surface">Cold storage door seal</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-medium">Resolved</span>
+<span class="text-secondary text-label-sm font-label-sm">· 11:42</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+              Temperature re-verified at 3.8°C following gasket adjustment on Reach-in Unit C. Stabilized within safe range.
+            </p>
+<div class="flex items-center gap-space-md mt-space-xs text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Corrected by Marcus K.
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm lg:flex-shrink-0 self-end lg:self-center">
+<button class="px-space-md py-3 rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors cursor-pointer" type="button">
+            View Log
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interaction: Subtle click response and tactile feel
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      if (!this.classList.contains('active:scale-[0.98]')) {
+        this.classList.add('active:scale-[0.98]');
+      }
+    });
+  });
+</script></div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-md text-secondary font-label-sm text-label-sm"><span>© 2025 KitchenGuard Technologies Inc. Michelin-standard culinary compliance.</span><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">verified</span>HACCP Compliant</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">mic</span>Voice Engine Online</span></div></div></footer></body></html>

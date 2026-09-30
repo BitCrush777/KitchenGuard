@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KitchenGuard - Food Safety Hospitality OS</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline":"#727970","on-error-container":"#93000a","on-primary-fixed-variant":"#2d4e31","on-tertiary-fixed-variant":"#673d00","on-tertiary":"#ffffff","surface-bright":"#fbf9f6","on-tertiary-fixed":"#2b1700","secondary-fixed-dim":"#cac6bf","on-secondary-fixed-variant":"#494741","background":"#fbf9f6","on-secondary":"#ffffff","on-tertiary-container":"#f5a648","primary-fixed-dim":"#aad0aa","tertiary-container":"#693e00","primary":"#17381d","on-error":"#ffffff","on-secondary-fixed":"#1d1b17","surface-tint":"#446647","on-primary-container":"#9bc09b","error-container":"#ffdad6","primary-container":"#2e4f32","surface-container-high":"#eae8e5","on-surface":"#1b1c1a","surface-container-highest":"#e4e2df","on-background":"#1b1c1a","inverse-surface":"#30312f","surface-variant":"#e4e2df","tertiary":"#4a2a00","on-secondary-container":"#67645e","tertiary-fixed-dim":"#ffb869","error":"#ba1a1a","inverse-on-surface":"#f2f0ed","secondary-container":"#e7e2da","secondary-fixed":"#e7e2da","tertiary-fixed":"#ffdcbb","surface-container-lowest":"#ffffff","primary-fixed":"#c6edc5","secondary":"#615e58","on-primary-fixed":"#012109","surface":"#fbf9f6","surface-dim":"#dbdad7","on-surface-variant":"#424841","surface-container-low":"#f5f3f0","on-primary":"#ffffff","inverse-primary":"#aad0aa","outline-variant":"#c2c8bf","surface-container":"#efeeeb"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1.5rem","space-md":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2.5rem","space-xl":"2.5rem"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"500"}],"display-lg":["48px",{"lineHeight":"56px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"display-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,29,27,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="KitchenGuard Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XsfnfUrbIuZLExlHbzs4arrBSC8VI5jGxxwxb6MJ-vUvJNyacN_VYLHz0Ah_XbR_xbm_-ytBt_oeNnjQq77RM5fpNk4Q7JBHNxab2s_EG2UbTvgZLIyOStrEFIA7Vq9yHuh79vkoTViV8d4-0KX4zByb09134tLTLtLTmhTHLa6HotrxeCIOLWiwO2UP20vcKSs8RFxKvJVMhe0JE9TmNbPdkanQtKJP9dZU8mN9bD8u6ACvuQYqJdEwB2"/><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold">KitchenGuard</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary px-space-xs py-0.5 rounded bg-surface-container-high">Hospitality OS</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="overview" href="#">Overview</a><a aria-current="page" class="transition-colors py-2 text-primary font-semibold border-b-2 border-primary" data-path="inspections" href="#">Inspections</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="issues" href="#">Issues</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="reports" href="#">Reports</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-2" data-path="rules" href="#">Rules</a></nav><div class="flex items-center gap-space-md"><button class="hidden sm:flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-full transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-[18px] text-secondary">restaurant</span><span class="font-label-md text-label-md">Main Kitchen</span><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></button><div class="hidden md:flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-primary-fixed text-on-primary-fixed"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm tracking-tight">Ready for Opening</span></div><button aria-label="Notifications" class="relative p-space-sm rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors cursor-pointer" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-container"></span></button><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight font-medium">Arun</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Kitchen Manager</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="max-w-7xl mx-auto px-gutter py-space-lg"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-xl pb-space-xl">
+<!-- Top Back Row & Subtle Session Counter -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<a class="inline-flex items-center gap-space-xs text-secondary hover:text-primary transition-colors font-label-lg text-label-lg group w-fit" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span>Back to Overview</span>
+</a>
+<div class="flex items-center gap-space-sm self-start sm:self-auto px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="tracking-wide uppercase">Session Protocol 04-A</span>
+<span class="text-outline-variant">•</span>
+<span>Shift: Morning Line Prep</span>
+</div>
+</div>
+<!-- Editorial Header Block with Asymmetric Accents -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Walkthrough Configuration</span>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight mt-space-xs">Start an inspection.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-sm leading-relaxed">
+          Select an inspection workflow or trigger a custom voice walkthrough.
+        </p>
+</div>
+<!-- Visual Audio Status Beacon -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container-low rounded-xl shadow-sm self-start lg:self-auto">
+<div class="relative flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest text-primary shadow-sm">
+<span class="material-symbols-outlined text-[22px]">hearing</span>
+<span class="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-primary-fixed-dim border-2 border-surface"></span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Microphone Calibrated</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-medium">99.4% Clarity</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Acoustic background noise suppression active</p>
+</div>
+</div>
+</div>
+<!-- Main Grid: Four Selectable Workflow Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg" id="workflowGrid">
+<!-- Card 1: Opening (Active/Selected by default) -->
+<div class="workflow-card relative flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-md cursor-pointer transition-all duration-300 hover:shadow-xl bg-gradient-to-br from-primary-fixed/20 via-surface-container-lowest to-surface-container-lowest" data-checkpoints="8 key checkpoints" data-estimate="5–8 minutes" data-workflow="opening">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">wb_twilight</span>
+</div>
+<div class="selection-pill px-space-md py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Selected</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Protocol 01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight mt-0.5">Opening</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              Verify critical refrigeration, prep station sanitized surfaces, and opening checklist.
+            </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/60 rounded-lg p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>5–8 minutes</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">8 key checkpoints</span>
+</div>
+</div>
+<!-- Card 2: Closing -->
+<div class="workflow-card relative flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm cursor-pointer transition-all duration-300 hover:shadow-lg hover:bg-surface-container-low/40" data-checkpoints="12 checkpoints" data-estimate="8–10 minutes" data-workflow="closing">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">bedtime</span>
+</div>
+<div class="selection-pill px-space-md py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm hidden items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Selected</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Protocol 02</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight mt-0.5">Closing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              End-of-day cold storage lockdown, waste disposal verification, and equipment power-down.
+            </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/60 rounded-lg p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>8–10 minutes</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">12 checkpoints</span>
+</div>
+</div>
+<!-- Card 3: Deep Clean -->
+<div class="workflow-card relative flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm cursor-pointer transition-all duration-300 hover:shadow-lg hover:bg-surface-container-low/40" data-checkpoints="16 checkpoints" data-estimate="15–20 minutes" data-workflow="deep-clean">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">sanitizer</span>
+</div>
+<div class="selection-pill px-space-md py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm hidden items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Selected</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Protocol 03</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight mt-0.5">Deep Clean</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              Weekly sanitation audit of hoods, walk-in drainage, line sanitation, and chemical storage.
+            </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/60 rounded-lg p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>15–20 minutes</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">16 checkpoints</span>
+</div>
+</div>
+<!-- Card 4: Custom Walkthrough -->
+<div class="workflow-card relative flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm cursor-pointer transition-all duration-300 hover:shadow-lg hover:bg-surface-container-low/40" data-checkpoints="Auto-routed items" data-estimate="Flexible duration" data-workflow="custom-voice">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">mic_double</span>
+</div>
+<div class="selection-pill px-space-md py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm hidden items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Selected</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Protocol 04 · Freeform</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight mt-0.5">Custom Voice Audit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              Walk freely and speak any observation. KitchenGuard routes items to the appropriate safety rules automatically.
+            </p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low/60 rounded-lg p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">all_inclusive</span>
+<span>Flexible duration</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded">Freeform Observation</span>
+</div>
+</div>
+</div>
+<!-- Visual Storytelling Ribbon: Modern Culinary Environment Glance -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<div class="relative h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of an immaculate commercial stainless steel kitchen prep table in soft warm early morning light, organic herb garnishes in stoneware ramekins, natural clean tones, Michelin grade poise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLNvS2FlXpJJTSt2r_drzZWnMwgPGr15YyboOYXCiYR6geJJCKcS8gu9a88-FytgaTvjjLjZR9ghbv_F4DPRM5wizvguTfFeviy0qo0gJ-pm-ocg1KhDA07mXGgvH9ztSY3KsHBSsULqClsTCQVYxWCxhi0K-e8muePoWJ6xxbeFN9y8fTvLFnjWDvsFCybe6aYytuO2fLuINAzsqVH7ph4OqFkDrFdYLveWWliiH-4pEzgwZsWOjQhQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-label-sm text-label-sm opacity-80 uppercase tracking-widest">Zone 1</span>
+<span class="font-label-md text-label-md font-semibold">Cold Storage &amp; Dairy</span>
+</div>
+</div>
+<div class="relative h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Chef inspecting temperature display of an upright commercial stainless steel refrigerator with digital probe in a quiet serene kitchen environment with morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5MpVShZajsV5hKyY12ujAjPuTB-zo4NDyYwmZDcPN52lPUYEYvmWV_4nze_IC2i-vV9-nGNabNHLH37Y_T1xY9GU0HHssDaUvzCk8ES8cqxuEtNxHahW3pFKnjiJ1em49_LZigsIz7hFeVCHqIRYCus24rA-AiXbhDC-6E58004FQwHN24UX3de93G7ufmzw8WsnG-un0s5_PgAo5I4jSYpdXYANvgBlfUxwEe0lETbMI-_J3DlRP9w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-label-sm text-label-sm opacity-80 uppercase tracking-widest">Zone 2</span>
+<span class="font-label-md text-label-md font-semibold">Sauté &amp; Hot Hold Station</span>
+</div>
+</div>
+<div class="relative h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Macro view of stainless steel sanitary wash line and sanitizer test strip stations laid out neatly on butcher block table in warm hospitality kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMLlhyIccAiAWt1u_uAlu056yNWN3w1_viJb7xCfGLvQIcH54cb9ov5_Pk3QMLwWwVUqgd08HG2B7uBoxQEjpyr6rB9UmotigRrxnxeYK7ZR0RwsrlHSOkZ5xUfjDxGc7XqGmoCv08mq45sBNLcAzT2Cunf4k-O7x6GMhXUWr-TZzYNiAjfy76PU00ZQTXeOKbL8PgESEKFF99M8kl9o75OnWJVh638lZpVoz0-FOBvv04LHURESf30g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-label-sm text-label-sm opacity-80 uppercase tracking-widest">Zone 3</span>
+<span class="font-label-md text-label-md font-semibold">Sanitizer &amp; Warewash Line</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Details Bar (Tonal Inset Box) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-label-lg text-label-lg font-semibold">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>Inspection Parameters</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Verified against Local Environmental Health standards</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Kitchen Selector -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Kitchen Location</span>
+<div class="flex items-center justify-between mt-1">
+<div class="flex items-center gap-space-xs text-on-surface font-label-lg text-label-lg font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">restaurant</span>
+<span>Main Kitchen</span>
+</div>
+<button aria-label="Select Kitchen" class="text-secondary hover:text-primary transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">unfold_more</span>
+</button>
+</div>
+</div>
+<!-- Compliance Framework -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Framework &amp; Rules</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate" title="Standard Commercial Food Safety (HACCP Aligned)">HACCP Aligned</span>
+</div>
+</div>
+<!-- Audio Channel -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Audio Channel</span>
+<div class="flex items-center justify-between mt-1">
+<div class="flex items-center gap-space-xs text-on-surface font-label-lg text-label-lg font-semibold truncate">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="truncate">AirPods Pro</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-1.5 py-0.5 rounded">Active</span>
+</div>
+</div>
+<!-- Estimated Runtime -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Estimated Duration</span>
+<div class="flex items-center gap-space-xs mt-1 text-on-surface font-label-lg text-label-lg font-semibold">
+<span class="material-symbols-outlined text-[18px] text-primary">timelapse</span>
+<span id="runtimeEstimate">5–8 minutes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Action Center -->
+<div class="bg-surface-container-low/70 rounded-2xl p-space-lg sm:p-space-xl flex flex-col items-center text-center gap-space-md shadow-sm">
+<!-- Interactive Voice Pulsar Simulation -->
+<div class="flex items-center gap-1.5 h-6 text-primary">
+<span class="w-1 h-3 rounded-full bg-primary/40 animate-pulse"></span>
+<span class="w-1 h-5 rounded-full bg-primary animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-1 h-2 rounded-full bg-primary/60 animate-pulse" style="animation-delay: 300ms;"></span>
+<span class="w-1 h-6 rounded-full bg-primary animate-pulse" style="animation-delay: 75ms;"></span>
+<span class="w-1 h-3 rounded-full bg-primary/40 animate-pulse" style="animation-delay: 200ms;"></span>
+</div>
+<!-- Main CTA Button -->
+<div class="w-full max-w-md">
+<button class="w-full h-14 bg-primary text-on-primary hover:bg-primary-container active:scale-[0.98] transition-all rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-sm shadow-md cursor-pointer" id="startInspectionBtn" type="button">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+<span id="ctaLabel">Start Voice Inspection</span>
+<span class="material-symbols-outlined text-[18px] opacity-70">graphic_eq</span>
+</button>
+</div>
+<!-- Reassurance Microcopy -->
+<div class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm max-w-lg">
+<span class="material-symbols-outlined text-[16px] text-primary flex-shrink-0">check</span>
+<span>Hands-free speech detection activates immediately. You can keep your device in your pocket or on the prep bench.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initInspectionWorkflow() {
+    const cards = document.querySelectorAll('.workflow-card');
+    const runtimeText = document.getElementById('runtimeEstimate');
+    const ctaLabel = document.getElementById('ctaLabel');
+    const startBtn = document.getElementById('startInspectionBtn');
+
+    const selectedClasses = ['bg-gradient-to-br', 'from-primary-fixed/20', 'via-surface-container-lowest', 'to-surface-container-lowest', 'shadow-md'];
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Reset all cards
+        cards.forEach(c => {
+          c.classList.remove(...selectedClasses);
+          c.classList.add('shadow-sm');
+          
+          // Icon Box revert
+          const iconBox = c.querySelector('.w-12');
+          if (iconBox) {
+            iconBox.classList.remove('bg-primary', 'text-on-primary');
+            iconBox.classList.add('bg-surface-container', 'text-primary');
+          }
+
+          // Pill Revert
+          const pill = c.querySelector('.selection-pill');
+          if (pill) {
+            pill.classList.add('hidden');
+            pill.classList.remove('flex', 'bg-primary', 'text-on-primary');
+            pill.classList.add('bg-surface-container-high', 'text-secondary');
+          }
+        });
+
+        // Activate current
+        card.classList.add(...selectedClasses);
+        card.classList.remove('shadow-sm');
+
+        const activeIcon = card.querySelector('.w-12');
+        if (activeIcon) {
+          activeIcon.classList.remove('bg-surface-container', 'text-primary');
+          activeIcon.classList.add('bg-primary', 'text-on-primary');
+        }
+
+        const activePill = card.querySelector('.selection-pill');
+        if (activePill) {
+          activePill.classList.remove('hidden', 'bg-surface-container-high', 'text-secondary');
+          activePill.classList.add('flex', 'bg-primary', 'text-on-primary');
+        }
+
+        // Update runtime bar
+        const estimate = card.getAttribute('data-estimate');
+        if (runtimeText && estimate) {
+          runtimeText.textContent = estimate;
+        }
+
+        const wfType = card.getAttribute('data-workflow');
+        if (ctaLabel) {
+          if (wfType === 'custom-voice') {
+            ctaLabel.textContent = 'Start Custom Voice Walkthrough';
+          } else {
+            ctaLabel.textContent = 'Start Voice Inspection';
+          }
+        }
+      });
+    });
+
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        const originalContent = startBtn.innerHTML;
+        startBtn.innerHTML = `
+          <span class="w-4 h-4 border-2 border-on-primary border-t-transparent rounded-full animate-spin"></span>
+          <span>Connecting Audio Channel...</span>
+        `;
+        startBtn.disabled = true;
+
+        setTimeout(() => {
+          startBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px]">mic</span>
+            <span>Microphone Listening &bull; Begin Speaking</span>
+          `;
+          startBtn.classList.remove('bg-primary');
+          startBtn.classList.add('bg-primary-container');
+        }, 1200);
+      });
+    }
+  })();
+</script></div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-md text-secondary font-label-sm text-label-sm"><span>© 2025 KitchenGuard Technologies Inc. Michelin-standard culinary compliance.</span><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">verified</span>HACCP Compliant</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">mic</span>Voice Engine Online</span></div></div></footer></body></html>
